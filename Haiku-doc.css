@@ -280,6 +280,7 @@ table.index a:hover, table.index a:active {
 	text-align: right;
 	color: silver;
 	border-top: dotted thin #a0a0a0;
+	margin-top: 25px;
 }
 
 /* More layout and styles */
@@ -399,6 +400,29 @@ pre.terminal {			/* Terminal output*/
     	font-family: serif;
    	font-variant: small-caps;
   	font-size: 0.8em;
+}
+
+.navi {				/* Navigation link   */
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-color: #336698;
+	border-style: solid;
+	border-width: 1px;
+	padding: 0px 3px 0px 3px;
+	background-color: #336698;
+	font-size: 1.3em;
+}
+
+.navi a {
+	color: white;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.navi a:hover, a:active {
+	color: silver;
 }
 
 /* printer only pretty stuff */

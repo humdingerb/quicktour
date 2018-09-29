@@ -349,6 +349,19 @@ pre.terminal {			/* Terminal output*/
 	color: silver;
 }
 
+.navdots a {
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.navdots a:hover, a:active {
+	color: #dc3c01;
+}
+
+.navdots a {
+	color: white;
+}
+
 /* printer only pretty stuff */
 @media /*screen,*/print {
 	/* suggest page orientation */

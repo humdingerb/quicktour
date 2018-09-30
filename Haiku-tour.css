@@ -362,6 +362,14 @@ pre.terminal {			/* Terminal output*/
 	color: white;
 }
 
+.navdots acronym, .navdots a {
+	text-decoration: none;
+}
+
+acronym.current-page {
+	color: #892601;
+}
+
 /* printer only pretty stuff */
 @media /*screen,*/print {
 	/* suggest page orientation */

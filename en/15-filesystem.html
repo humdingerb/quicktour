@@ -14,7 +14,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta http-equiv="Content-Style-Type" content="text/css" />
 	<meta name="robots" content="all" />
-	<title>Haiku Quick Tour: 6/19</title>
+	<title>Haiku Quick Tour: 15/19</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="../Haiku-tour.css" />
 </head>
@@ -36,7 +36,7 @@
 <a href="./3-window.html"><acronym title="The window widgets">&#9673;</acronym></a>&nbsp;
 <a href="./4-shortcutkey.html"><acronym title="The shortcut key">&#9673;</acronym></a>&nbsp;
 <a href="./5-twitcher.html"><acronym title="The Twitcher">&#9673;</acronym></a>&nbsp;
-<a href="./6-teammonitor.html"><acronym title="The Team monitor" class="current-page">&#9673;</acronym></a>&nbsp;
+<a href="./6-teammonitor.html"><acronym title="The Team monitor">&#9673;</acronym></a>&nbsp;
 <a href="./7-move-resize.html"><acronym title="Window management: Move &amp; Resize">&#9673;</acronym></a>&nbsp;
 <a href="./8-stack.html"><acronym title="Window management: Stack">&#9673;</acronym></a>&nbsp;
 <a href="./9-tile.html"><acronym title="Window management: Tile">&#9673;</acronym></a>&nbsp;
@@ -45,7 +45,7 @@
 <a href="./12-singlewindow.html"><acronym title="Single window navigation">&#9673;</acronym></a>&nbsp;
 <a href="./13-drilldown.html"><acronym title="Drill-down navigation">&#9673;</acronym></a>&nbsp;
 <a href="./14-mounting.html"><acronym title="Mounting volumes">&#9673;</acronym></a>&nbsp;
-<a href="./15-filesystem.html"><acronym title="Filesystem layout">&#9673;</acronym></a>&nbsp;
+<a href="./15-filesystem.html"><acronym title="Filesystem layout" class="current-page">&#9673;</acronym></a>&nbsp;
 <a href="./16-queries.html"><acronym title="Finding files with queries">&#9673;</acronym></a>&nbsp;
 <a href="./19-wireless.html"><acronym title="Wireless connection">&#9673;</acronym></a>&nbsp;
 <a href="./18-moresoftware.html"><acronym title="Getting more and updating software">&#9673;</acronym></a>&nbsp;
@@ -60,21 +60,35 @@
 <div id="content">
 <div>
 
-<span class="navi" style="float:left"><a href="5-twitcher.html">&#9664;&nbsp;Previous</a></span>
-<span class="navi" style="float:right"><a href="7-move-resize.html">Next&nbsp;&#9654;</a></span>
+<span class="navi" style="float:left"><a href="14-mounting.html">&#9664;&nbsp;Previous</a></span>
+<span class="navi" style="float:right"><a href="16-queries.html">Next&nbsp;&#9654;</a></span>
 
-<h1>The Team monitor</h1>
+<h1>Filesystem layout</h1>
 
-<p>If some application crashed badly and maybe won't disappear from Deskbar's running application list, press <span class="key">CTRL</span>&nbsp;<span class="key">ALT</span>&nbsp;<span class="key">DEL</span> to invoke the <span class="app">Team monitor</span>. Here you can select an entry and kill a misbehaving app.</p>
+<p>While Haiku is currently not multi-user, there are already two branches in the filesystem tree:</p>
 
-<div class="shot">
-<img src="./images/teammonitor.png" alt="The Team monitor" />
-</div>
+<table summary="layout" border="0" cellspacing="0" cellpadding="8">
+<tbody><tr><td><img src="../images/Folder_haiku.png" alt="Sytem" /><span class="path">/boot/system/</span></td><td>&nbsp;</td><td>The system hierarchy contains system files and settings for all users. The package management makes most folders under /system effectively read-only with the exceptions of <i>cache</i>, <i>non-packaged</i>, <i>settings</i>, and <i>var</i>.
+<ul>
+<li><span class="path">/system/packages/</span> is the default install location for software.</li>
+<li><span class="path">/system/documentation/</span> is used by some applications to store their manual.</li>
+</ul>
+</td></tr>
+<tr><td><img src="../images/Folder_home.png" alt="Sytem" /><span class="path">/boot/home/</span></td><td>&nbsp;</td><td>The home hierarchy is your personal folder where you keep your data and settings. Again, the package management makes most folders under /boot/home/config/ effectively read-only with the exceptions of <i>cache</i>, <i>non-packaged</i>, <i>settings</i>, and <i>var</i>.
+<ul>
+<li><span class="path">~/Desktop/</span> is where the files of your Desktop live.</li>
+<li><span class="path">~/config/settings/</span> is where the system and applications store your settings.</li>
+</ul>
+</td></tr>
+</tbody></table>
 
-<p>A neat way to quickly get rid of an app hanging in the Deskbar is the Vulcan Death Grip.<br />
-Hold <span class="key">SHIFT</span>&nbsp;<span class="key">CTRL</span>&nbsp;<span class="key">ALT</span> and click on the offending entry in the Deskbar. Poof!</p>
+<p>The writable <i>non-packaged</i> folders mirror the hierarchy of the /system or ~/config/ hierarchy (<i>add-ons</i>, <i>apps</i>, <i>bin</i>&#8230;).<br />
+Software that doesn't come in form of a HPKG package can be installed here.</p>
+
 <div class="further">Further reading:<br />
-<a href="https://www.haiku-os.org/docs/userguide/en/teammonitor.html" target="_blank">Team monitor</a></div>
+<a href="https://www.haiku-os.org/docs/userguide/en/filesystem-layout.html" target="_blank">Filesystem layout</a><br />
+<a href="https://www.haiku-os.org/docs/userguide/en/applications.html" target="_blank">Applications</a><br />
+<a href="https://git.haiku-os.org/haiku/tree/docs/develop/packages/DirectoryStructure.rst" target="_blank">Directory structure</a></div>
 
 </div>
 </div>

@@ -115,8 +115,8 @@ div.nav div.inner span a.uplink {
 }
 
 div.shot {
-	margin-top: 45px;
-	margin-bottom: 25px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	text-align: center;
 }
 
@@ -182,7 +182,7 @@ ul.lang-menu li a {
 	margin-top: 10px;
 	margin-left: 20px;
 	margin-right: 20px;
-	margin-bottom: 25px;
+	margin-bottom: 5px;
 	font-size: 0.9em;
 }
 @media (min-width:768px) {
@@ -190,7 +190,7 @@ ul.lang-menu li a {
 		margin-top: 30px;
 		margin-left: 40px;
 		margin-right: 40px;
-		margin-bottom: 50px;
+		margin-bottom: 5px;
 	}
 }
 

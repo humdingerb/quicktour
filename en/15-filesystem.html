@@ -68,13 +68,14 @@
 <p>While Haiku is currently not multi-user, there are already two branches in the filesystem tree:</p>
 
 <table summary="layout" border="0" cellspacing="0" cellpadding="8">
-<tbody><tr><td><img src="../images/Folder_haiku.png" alt="Sytem" /><span class="path">/boot/system/</span></td><td>&nbsp;</td><td>The system hierarchy contains system files and settings for all users. The package management makes most folders under /system effectively read-only with the exceptions of <i>cache</i>, <i>non-packaged</i>, <i>settings</i>, and <i>var</i>.
+<tbody><tr><td><img src="../images/Folder_haiku.png" alt="Sytem" /><span class="path">/boot/system/</span></td><td>&nbsp;</td><td>The system hierarchy contains system files and settings for all users. The package management makes most folders under /system effectively read-only. Packages contain all their files in a fixed folder hierarchy. Upon installation, a package gets "mounted" and all its files just appear to be in that hierarchy in the /system folder.<br />
+The folders there (like <i>add-ons</i>, <i>apps</i>, <i>bin</i> etc.) are just a virtual amalgamation of all the installed packages and are therefore read-only. Exceptions are <i>cache</i>, <i>non-packaged</i>, <i>settings</i>, and <i>var</i>.
 <ul>
 <li><span class="path">/system/packages/</span> is the default install location for software.</li>
 <li><span class="path">/system/documentation/</span> is used by some applications to store their manual.</li>
 </ul>
 </td></tr>
-<tr><td><img src="../images/Folder_home.png" alt="Sytem" /><span class="path">/boot/home/</span></td><td>&nbsp;</td><td>The home hierarchy is your personal folder where you keep your data and settings. Again, the package management makes most folders under /boot/home/config/ effectively read-only with the exceptions of <i>cache</i>, <i>non-packaged</i>, <i>settings</i>, and <i>var</i>.
+<tr><td><img src="../images/Folder_home.png" alt="Sytem" /><span class="path">/boot/home/</span></td><td>&nbsp;</td><td>The home hierarchy is your personal folder where you keep your data and settings. The folder /boot/home/config (or shortened ~/config) mirrors the /system folder described above and is likewise virtually read-only with the same exceptions of <i>cache</i>, <i>non-packaged</i>, <i>settings</i>, and <i>var</i>.
 <ul>
 <li><span class="path">~/Desktop/</span> is where the files of your Desktop live.</li>
 <li><span class="path">~/config/settings/</span> is where the system and applications store your settings.</li>

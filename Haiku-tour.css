@@ -234,8 +234,10 @@ ul.lang-menu li a {
 .further {
 	text-align: right;
 	color: silver;
+	background: #f8f8f8;
 	border-top: dotted thin #a0a0a0;
 	margin-top: 25px;
+	padding: 5px;
 }
 
 /* More layout and styles */

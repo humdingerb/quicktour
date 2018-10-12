@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<!-- 
+ *
+ * Copyright 2018, Haiku Inc. All rights reserved.
+ * Distributed under the terms of the MIT License.
+ *
+ * Authors:
+ *		Humdinger <humdingerb@gmail.com>
+ *		Akuji <akuji.ism@live.com>
+ *
+-->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta name="robots" content="all" />
+	<title>Быстрый тур по Haiku</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../Haiku-tour.css" />
+</head>
+<body>
+
+<div id="banner">
+<div><span>Быстрый тур</span></div>
+</div>
+
+<div class="nav">
+<div class="inner">
+<ul class="lang-menu">
+<li class="now"><img src="../images/flags/ru.png" alt="" /> Русский</li>
+<li><a href="../en/quicktour-single-page.html"><img src="../images/flags/gb.png" alt="" /> English</a></li>
+</ul>
+
+<span>
+<a href="./01-start.html" class="uplink">Слайд-шоу</a>
+</span>
+
+</div>
+</div>
+
+<div id="content">
+<div>
+
+<h1><a id="deskbar" name="deskbar">Панель задач</a></h1>
+
+<p>По умолчанию в правом верхнем углу рабочего стола находится Панель задач, именуемая Deskbar, которая является своеобразным "хабом" для взаимодействия с Haiku. С ее помощью вы можете запускать программы, утилиты и панели настроек, а также переключаться между запущенными приложениями.</p>
+
+<!-- [screenshot of opened deskbar, annotated] -->
+<div class="shot">
+<img src="./images/deskbar.png" alt="Панель задач" />
+</div>
+
+<div class="further">Дополнительно:<br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/deskbar.html" target="_blank">Панель задач</a></div>
+
+
+<h1><a id="window-widgets" name="window-widgets">Оконные виджеты</a></h1>
+
+<p>Так выгдялидит типичное окно Haiku и его виджеты:</p>
+
+<!-- [screenshot of window, annotated: Close button, Zoom button (usually maximizes the window), Double-click the tab to hide/minimize a window (find it again in the Deskbar), Move a window by grabbing it at the tab or border, Resize from the corner or by dragging a border with the right mouse button.] -->
+<div class="shot">
+<img src="./images/window.png" alt="Окно и его виджеты" />
+</div>
+
+<div class="further">Дополнительно:<br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/gui.html" target="_blank">Графический интерфейс Haiku</a></div>
+
+
+<h1><a id="shortcut-key" name="shortcut-key">Опциональная клавиша</a></h1>
+
+<p>Панель настроек <span class="app">Раскладка</span> позволяют вам переключиться со стандартной для Haiku клавиши <span class="key">ALT</span> на <span class="key">CTRL</span> (режим Windows/Linux). Это - глобальное переключение, поэтому, к примеру, выход из приложения в командной строке будет выполняться при помощи <span class="key">ALT</span>&nbsp;<span class="key">C</span> вместо обычного <span class="key">CTRL</span>&nbsp;<span class="key">C</span>.<br />
+Эта несогласованность является одной из причин, из-за которых клавиша <span class="key">ALT</span> является опциональной в Haiku по умолчанию.</p>
+
+<!-- [screenshot: Two edit menus (copy/paste/cut) with ALT and CTRL shortcut)] -->
+<div class="shot">
+<img src="./images/alt-ctrl.png" alt="Опциональная клавиша: ALT или CTRL" />
+</div>
+
+<div class="further">Дополнительно:<br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/keyboard-shortcuts.html" target="_blank">Горячие клавиши</a></div>
+
+
+<h1><a id="twitcher" name="twitcher">Переключатель задач</a></h1>
+
+<p>Удержание <span class="key">CTRL</span>&nbsp;<span class="key">TAB</span> вызывает <span class="app">Переключатель задач (Twitcher)</span>, при помощи которого вы можете переключаться между приложениями.<br />
+Краткое нажатие клавиши <span class="key">TAB</span> во время удержания <span class="key">CTRL</span> переключает на последнее использованное приложение.</p>
+
+<div class="shot">
+<img src="../images/twitcher.png" alt="Переключатель задач во время переключения между приложениями" />
+</div>
+
+<div class="further">Дополнительно:<br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/twitcher.html" target="_blank">Переключатель задач (Twitcher)</a></div>
+
+
+<h1><a id="team-monitor" name="team-monitor">Монитор процессов</a></h1>
+
+<p>Если произошел фатальный сбой какого-либо приложения и оно не исчезло из списка запущенных программ на Панели задач, нажмите <span class="key">CTRL</span>&nbsp;<span class="key">ALT</span>&nbsp;<span class="key">DEL</span> для вызова <span class="app">Монитора процессов</span>. В нем вы можете выбрать проблемное приложение из списка и принудительно завершить его работу.</p>
+
+<div class="shot">
+<img src="./images/teammonitor.png" alt="Монитор процессов" />
+</div>
+
+<p>Отличный способ избавиться от приложения, зависшего на Панели задач - "Вулканский смертельный захват".<br />
+Удерживая <span class="key">SHIFT</span>&nbsp;<span class="key">CTRL</span>&nbsp;<span class="key">ALT</span>, кликните по его названию на Панели задач и... вуаля!</p>
+<div class="further">Дополнительно:<br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/teammonitor.html" target="_blank">Монитор процессов</a></div>
+
+
+<h1><a id="move-resize" name="move-resize">Управление окнами: Перемещение и изменение размеров</a></h1>
+
+<p>Haiku предоставляет удобный способ для быстрого перемещения окон или изменения их размеров:<br />
+Удерживание нажатыми <span class="key">CTRL</span>&nbsp;<span class="key">ALT</span> подсвечивает границы окна, расположенные ближе всего к указателю мыши.<br />
+Нажмите и удерживайте правую кнопку мыши, чтобы изменить размеры окна по направлению подсвеченных границ.<br />
+Нажмите и удерживайте левую кнопку мыши, чтобы переместить окно в другое место.</p>
+
+<div class="shot">
+<img src="./images/move-resize.png" alt="Перемещение при помощи CTRL+ALT+левого щелчка мыши" />
+</div>
+
+<div class="further">Дополнительно:<br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/gui.html#move-resize" target="_blank">Быстрый способ перемещения и изменения размера окон</a></div>
+
+
+<h1><a id="stack" name="stack">Управление окнами: Группирование</a></h1>
+
+<p>"Группирование" - помещение окон одно на другое, в результате чего их желтые заголовки автоматически выстраиваются в заданном порядке.<br />
+Во время удержания нажатой клавиши <span class="key">OPT</span> (обычно в этой роли выступает <span class="key">WIN</span> на клавиатуре), заголовки изменяют свой цвет при перекрывании; отпустите окно, чтобы оно сгруппировалось с другим.<br />
+Чтобы разъединить окна, удерживая <span class="key">OPT</span>, оттащите окно от его группы при помощи желтого заголовока.</p>
+
+<!-- Gif created from 3 images at https://ezgif.com/maker/
+Delay time 200 (= 2 secs), option "Don't stack frames" -->
+<div class="shot">
+<img src="./images/stack.gif" alt="Группирование окон" />
+</div>
+
+<div class="further">Дополнительно:<br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/gui.html#stack-tile" target="_blank">Группирование и Прикрепление</a></div>
+
+
+<h1><a id="tile" name="tile">Управление окнами: Прикрепление</a></h1>
+
+<p>"Прикрепление" - "склеивание" окон друг с другом горизонтально или вертикально.<br />
+Во время удержания нажатой клавиши <span class="key">OPT</span>, рамки окон, которые служат местом прикрепления, меняют свой цвет, когда их границы почти соприкасаются.<br />
+Чтобы раскрепить окна, удерживая <span class="key">OPT</span>, оттащите окно от его группы при помощи желтого заголовока.</p>
+
+<!-- Gif created from 3 images at https://ezgif.com/maker/
+Delay time 200 (= 2 secs), option "Don't stack frames" -->
+<div class="shot">
+<img src="./images/tile.gif" alt="Прикрепление окон" />
+</div>
+
+<div class="further">Дополнительно:<br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/gui.html#stack-tile" target="_blank">Группирование и Прикрепление</a></div>
+
+
+<h1><a id="workspaces" name="workspaces">Рабочие пространства</a></h1>
+
+<p>Рабочие пространства представляют собой виртуальные рабочие столы, каждый из которых имеет свое разрешение, глубину цвета и фон.<br />
+Можно создать до 32 рабочих столов при помощи настроек <span class="app">экрана</span>.</p>
+<p>Апплет <span class="app">Рабочие столы</span> может использоваться для переключения между рабочими столами, а также перемещения окон из одного рабочего стола в другое.</p>
+<p>Комбинация горячих клавиш для быстрого переключения между столами - <span class="key">CTRL</span>&nbsp;<span class="key">ALT</span>&nbsp;<span class="key">&#8592;</span>&nbsp;/&nbsp;<span class="key">&#8594;</span>&nbsp;/&nbsp;<span class="key">&#8593;</span>&nbsp;/&nbsp;<span class="key">&#8595;</span>.<br />
+Если при этом дополнительно удерживать клавишу <span class="key">SHIFT</span>, активное окно переместится с вами на другой рабочий стол.</p>
+
+<div class="shot">
+<img src="./images/workspaces.png" alt="Апплет Рабочие столы" />
+</div>
+
+<div class="further">Дополнительно:<br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/workspaces.html" target="_blank">Рабочие пространства</a><br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/preferences/screen.html" target="_blank">Экран</a></div>
+
+
+<h1><a id="replicants" name="replicants">Репликанты</a></h1>
+
+<p>Репликанты - это небольшие автономные части приложений, которые могут быть помещены на Рабочий стол (или интегрированы в другие приложения).<br />
+В случае активированной в Панели задач (Deskbar) опции <span class="menu">Отображать репликанты</span>, область репликанта можно будет отличить по маленькому значку в правом нижнем углу.<br />
+Ухватившись за этот значок, вы можете перенести репликант на Рабочий стол, где он продолжит работать даже если его родительское приложение не запущено.</p>
+
+<!-- [screenshot of various Replicants] -->
+<div class="shot">
+<img src="./images/replicant.png" alt="Приложение Погода и его репликант" />
+</div>
+
+<p>Вы можете переместить репликант при помощи этого же значка и удалить его, кликнув по нему правой кнопкой мыши и выбрав <span class="menu">Удалить репликант</span>.</p>
+
+<div class="further">Дополнительно:<br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/gui.html#replicants" target="_blank">Репликанты</a></div>
+
+
+<h1><a id="single-window-nav" name="single-window-nav">Навигация в одном окне</a></h1>
+
+<p>Открывая в файловом менеджере Tracker папку за папкой, вы быстро получите множество открытых окон.<br />
+Этого можно избежать, удерживая нажатой клавишу <span class="key">OPT</span> (обычно в этой роли выступает <span class="key">WIN</span> на клавиатуре), которая автоматически закрывает родительское окно.<br />
+В качестве альтернативы вы можете включить опцию <span class="menu">Показывать папки в одном окне</span> в настройках <span class="app">Tracker</span>.<br />
+Опция <span class="menu">Панель навигации</span> добавит кнопки назад/вперед.</p>
+
+<!-- [screenshot: Tracker preferences and Tracker window with navigator] -->
+<div class="shot">
+<img src="./images/singlewindow.png" alt="Использование навигации в одном окне" />
+</div>
+
+<div class="further">Дополнительно:<br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/tracker.html" target="_blank">Tracker</a></div>
+
+
+<h1><a id="drill-down" name="drill-down">Ниспадающие подменю</a></h1>
+
+<p>Хорошей альтернативой погружению в дебри открываемых папок являются "ниспадающие подменю". Щелчок правой кнопкой мыши по папке в файловом менеджере или на Рабочем столе откроет контекстное меню. Кроме обычных команд, в самом верху контекстного меню вы найдете подменю текущей папки.<br />
+Просто перемещайтесь вниз по иерархии, пока не найдете нужную папку или файл.</p>
+
+<div class="shot">
+<img src="./images/drilldown.png" alt="Перемещение по иерархи папок при помощи ниспадающих меню" />
+</div>
+
+<div class="further">Дополнительно:<br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/tracker.html#navigating" target="_blank">Навигация</a></div>
+
+
+<h1><a id="mounting" name="mounting">Подключение дисков</a></h1>
+
+<p>Для того чтобы получить доступ к жёстком диску, CD-диску, USB-диску и т.д., вам сначала нужно подключить раздел. Будучи подключенным, его иконка появится на рабочем столе.<br />
+Это можно сделать, щелкнув правой кнопкой мыши на рабочем столе или иконке уже подключенного раздела (к прмеру, загрузочного диска) и выбрав нужный раздел из меню <span class="menu">Подключить</span>. Меню <span class="menu">Подключить</span> также можно найти в Панели задач Deskbar. ISO-образы можно подключить двойным щелчком.</p>
+
+<div class="box-warning">Перед изъятием USB-дисков и т.д., вы должны щелкнуть правой кнопкой мыши по иконке и выбрать <span class="menu">Отключить</span>, после чего дождаться исчезновения иконки. В противном случае вы рискуете потерять все данные, запись которых могла выполняться в этот момент!</div>
+
+<div class="shot">
+<img src="./images/mount.png" alt="Подключение диска" />
+</div>
+
+<div class="further">Дополнительно:<br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/tracker.html#mounting-volumes" target="_blank">Подключение дисков</a></div>
+
+
+<h1><a id="filesystem" name="filesystem">Иерархия файловой системы</a></h1>
+
+<p>Хотя Haiku в данный момент не является многопользовательской, файловая структура уже сейчас разделена на две части:</p>
+
+<table summary="layout" border="0" cellspacing="0" cellpadding="8">
+<tbody><tr><td><img src="../images/Folder_haiku.png" alt="Sytem" /><span class="path">/boot/system/</span></td><td>&nbsp;</td><td>Системная директория содержит системные файлы и настройки для всех пользователей. Пакетный менеджер делает большинство папок в разделе /system доступными только для чтения. Внутренние файлы каждого пакета имеют строгую структуру. После установки пакет "подключается" и все его файлы просто появляются в иерархии раздела /system.<br />
+Расположенные там папки (к примеру, <i>add-ons</i>, <i>apps</i>, <i>bin</i> и т.д.) являются виртуальным объединением всех установленных пакетов и поэтому доступны только для чтения. Исключения: <i>cache</i>, <i>non-packaged</i>, <i>settings</i> и <i>var</i>.
+<ul>
+<li><span class="path">/system/packages/</span> в эту папку по умолчанию устанавливаются приложения.</li>
+<li><span class="path">/system/documentation/</span> используется некоторыми программами для хранения их руководств пользователя.</li>
+</ul>
+</td></tr>
+<tr><td><img src="../images/Folder_home.png" alt="Sytem" /><span class="path">/boot/home/</span></td><td>&nbsp;</td><td>Домашняя директория - это ваша персональная папка, в которой вы можете хранить свои файлы и настройки. Папка /boot/home/config (для краткости ~/config) аналогична разделу /system, описанному выше, и также доступна только для чтения за исключением <i>cache</i>, <i>non-packaged</i>, <i>settings</i> и <i>var</i>.
+<ul>
+<li><span class="path">~/Desktop/</span> служит хранилищем файлов, расположенных на рабочем столе.</li>
+<li><span class="path">~/config/settings/</span> содержит настройки системы и приложений.</li>
+</ul>
+</td></tr>
+</tbody></table>
+
+<p>Доступные для записи папки <i>non-packaged</i> имитируют иерархию /system или ~/config/ (<i>add-ons</i>, <i>apps</i>, <i>bin</i>&#8230;).<br />
+В них можно установить приложения, поставляющиеся не в виде пакетов HPKG.</p>
+
+<div class="further">Дополнительно:<br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/filesystem-layout.html" target="_blank">Иерархия файловой системы</a><br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/applications.html" target="_blank">Приложения</a><br />
+<a href="https://git.haiku-os.org/haiku/tree/docs/develop/packages/DirectoryStructure.rst" target="_blank">Структура директорий файловой системы</a></div>
+
+
+<h1><a id="queries" name="queries">Поиск файлов с использованием запросов</a></h1>
+
+<p>Поиск файлов, расположенных на отформатированных разделах Haiku (BFS), легко выполнить при помощи команды <span class="menu">Найти…</span>, доступной в меню Панели задач. Кроме названий файлов или папок, вы также можете искать по атрибутам, относящимся к файлам того или иного типа, к примеру "Исполнитель" для вашей музыкальной коллекции MP3.</p>
+
+<!-- [screenshot of Find window and result window of Artitst == Fairport] -->
+<div class="shot">
+<img src="./images/query.png" alt="Поиск всех файлов MP3 определенного исполнителя" />
+</div>
+
+<div class="further">Дополнительно:<br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/queries.html" target="_blank">Запросы</a><br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/workshop-filetypes+attributes.html" target="_blank">Типы файлов, атрибуты, индексация и запросы</a></div>
+
+
+<h1><a id="wireless" name="wireless">Беспроводное соединение</a></h1>
+
+<p>Вы можете подключиться к вашему беспроводному роутеру либо щелкнув правой кнопкой мыши по иконке <span class="app">Статус сети</span> в трее Панели задач,<br />
+либо выбрав вашу сеть в панели настроек <span class="app">Сеть</span>.<br />
+Когда соединение будет установлено, вас попросят указать метод аутентификации и пароль.</p>
+
+<!-- [screenshot of Network prefs, context menu of icon in deskbar] -->
+<div class="shot">
+<img src="./images/wireless.png" alt="Подключение к беспроводной сети" />
+</div>
+
+<div class="further">Дополнительно:<br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/workshop-wlan.html" target="_blank">Беспроводные сети</a><br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/desktop-applets/networkstatus.html" target="_blank">Статус сети</a><br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/preferences/network.html" target="_blank">Сеть</a></div>
+
+
+<h1><a id="more-software" name="more-software">Дополнительное программное обеспечение и его обновление</a></h1>
+
+<p><span class="app">HaikuDepot</span>, доступный из меню Панели задач, является главным источником для установки и удаления программных пакетов.<br />
+<span class="app">SoftwareUpdater</span> необходимо запускать время от времени для обновления приложений, а также самой Haiku.</p>
+
+<!-- [screenshot of HaikuDepot and SoftwareUpdater] -->
+<div class="shot">
+<img src="./images/moresoftware.png" alt="Установка и обновление программ" />
+</div>
+
+<div class="further">Дополнительно:<br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/applications/haikudepot.html" target="_blank">HaikuDepot</a><br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/applications/softwareupdater.html" target="_blank">SoftwareUpdater</a><br />
+<a href="https://www.haiku-os.org/docs/userguide/ru/preferences/repositories.html" target="_blank">Репозитории</a></div>
+
+
+<h1><a id="the-end" name="the-end">Эпилог</a></h1>
+
+<p>Наш тур подошел к завершению. Мы надеемся, что он помог вам быстро почувствовать себя в новой ОС как дома!</p>
+<p>Более детальную информацию вы можете получить, воспользовавшись <a href="https://www.haiku-os.org/docs/welcome/welcome_ru.html" target="_blank">Вступительной страницей</a> и <a href="https://www.haiku-os.org/docs/userguide/ru/contents.html" target="_blank">Руководством пользователя</a>.<br />
+Вы также можете посетить наш <a href="https://discuss.haiku-os.org/" target="_blank">форум</a> и <a href="https://www.haiku-os.org/community/irc/" target="_blank">основной IRC-канал #haiku</a> для получения помощи или обсуждения ваших идей.</p>
+<p>Официальный сайт Haiku содержит информацию о том, каким образом <a href="https://www.haiku-os.org/community/getting-involved/" target="_blank">вы можете помочь</a> развивать Haiku. Вы также можете внести <a href="https://www.haiku-os.org/community/donating_to_haiku" target="_blank">финансовые пожертвования</a>.</p>
+
+<p><br /></p>
+<div class="shot">
+<a href="https://www.haiku-os.org"><img src="../images/H square - black on white.png" alt="Посетите сайт Haiku по адресу https://www.haiku-os.org" /></a>
+</div>
+<p><span style="color:silver; font-size:0.8em; float:center">Copyright 2018, Haiku Inc., Автор: Humdinger</span></p>
+<p><br /></p>
+</div>
+</div>
+
+</body>
+</html>

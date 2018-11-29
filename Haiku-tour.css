@@ -95,7 +95,7 @@ div.nav {
 }
 @media (min-width:768px) {
 	div.nav {
-		min-width: 59em;
+		/* min-width: 59em; */
 	}
 }
 
@@ -107,7 +107,7 @@ div.nav div.inner {
 }
 @media (min-width:768px) {
 	div.nav div.inner {
-		min-width: 59em;
+		/* min-width: 59em; */
 		max-width: 70em;
 	}
 }

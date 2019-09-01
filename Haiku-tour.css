@@ -121,6 +121,27 @@ div.nav div.inner span a.uplink {
 	font-weight: normal;
 }
 
+div.spacing {
+	height: 15ex;
+}
+
+div.further {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: right;
+	color: silver;
+	background: #f8f8f8;
+	border-top: dotted thin #a0a0a0;
+	margin-top: 5px;
+	padding: 5px;
+}
+
+div.further span {
+	margin-right: 40px;
+}
+
 div.shot {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -229,15 +250,6 @@ ul.lang-menu li a {
 }
 .box-stop {
 	background: #ffeae6 url(images/alert_stop_32.png) 15px 15px no-repeat;
-}
-
-.further {
-	text-align: right;
-	color: silver;
-	background: #f8f8f8;
-	border-top: dotted thin #a0a0a0;
-	margin-top: 25px;
-	padding: 5px;
 }
 
 /* More layout and styles */

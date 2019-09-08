@@ -100,7 +100,15 @@ h1 {
 	margin-bottom: 25px;
 	text-align: center;
 }
-
+h2 {
+	font-size: 1.3em;
+	font-weight: normal;
+	color: #0c3762;
+	border-bottom: dotted thin #e0e0e0;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	text-align: center;
+}
 p {
 	text-align: center;
 }

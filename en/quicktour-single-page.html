@@ -4,7 +4,7 @@
 <head>
 <!-- 
  *
- * Copyright 2018, Haiku Inc. All rights reserved.
+ * Copyright 2018-2019, Haiku Inc. All rights reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
@@ -29,20 +29,74 @@
 <div class="inner">
 <ul class="lang-menu">
 <li class="now"><img src="../images/flags/gb.png" alt="" /> English</li>
-<li><a href="../de/quicktour-single-page.html"><img src="../images/flags/de.png" alt="" /> Deutsch</a></li>
-<li><a href="../ru/quicktour-single-page.html"><img src="../images/flags/ru.png" alt="" /> Русский</a></li>
+<li><a href="../de/quicktour.html"><img src="../images/flags/de.png" alt="" /> Deutsch</a></li>
+<li><a href="../ru/quicktour.html"><img src="../images/flags/ru.png" alt="" /> Русский</a></li>
 
 </ul>
 
-<span>
-<a href="./01-start.html" class="uplink">Slideshow</a>
+<span class="navdots">
+<a href="#start"><acronym title="Start page" class="current-page">&#9673;</acronym></a>&nbsp;
+<a href="#deskbar"><acronym title="The Deskbar">&#9673;</acronym></a>&nbsp;
+<a href="#window"><acronym title="The window widgets">&#9673;</acronym></a>&nbsp;
+<a href="#shortcutkey"><acronym title="The shortcut key">&#9673;</acronym></a>&nbsp;
+<a href="#twitcher"><acronym title="The Twitcher">&#9673;</acronym></a>&nbsp;
+<a href="#teammonitor"><acronym title="The Team monitor">&#9673;</acronym></a>&nbsp;
+<a href="#move-resize"><acronym title="Window management: Move &amp; Resize">&#9673;</acronym></a>&nbsp;
+<a href="#stack"><acronym title="Window management: Stack">&#9673;</acronym></a>&nbsp;
+<a href="#tile"><acronym title="Window management: Tile">&#9673;</acronym></a>&nbsp;
+<a href="#workspaces"><acronym title="Workspaces">&#9673;</acronym></a>&nbsp;
+<a href="#replicants"><acronym title="Replicants">&#9673;</acronym></a>&nbsp;
+<a href="#singlewindow"><acronym title="Single window navigation">&#9673;</acronym></a>&nbsp;
+<a href="#drilldown"><acronym title="Drill-down navigation">&#9673;</acronym></a>&nbsp;
+<a href="#mounting"><acronym title="Mounting volumes">&#9673;</acronym></a>&nbsp;
+<a href="#filesystem"><acronym title="Filesystem layout">&#9673;</acronym></a>&nbsp;
+<a href="#queries"><acronym title="Finding files with queries">&#9673;</acronym></a>&nbsp;
+<a href="#wireless"><acronym title="Wireless connection">&#9673;</acronym></a>&nbsp;
+<a href="#moresoftware"><acronym title="Getting more and updating software">&#9673;</acronym></a>&nbsp;
+<a href="#end"><acronym title="End page">&#9673;</acronym></a>&nbsp;
 </span>
 
+<span>
+<a href="#topics" class="uplink">Topics</a> 
+</span>
 </div>
 </div>
 
 <div id="content">
 <div>
+
+<h1><a id="start" name="start">Welcome to Haiku's Quick Tour</a></h1>
+
+<p>While Haiku shares many ideas with other operating systems, it does have a unique approach in some areas that are worth pointing out. In just a few slides, you’ll learn about the most important Haiku features and peculiarities that’ll help you get a running start.</p>
+<p>At the bottom right of each page, are links for "further reading" that point to additional resources, like related topics in the <a href="https://www.haiku-os.org/docs/userguide/en/contents.html" target="_blank">Userguide</a>.</p>
+
+<h2><a id="topics" name="topics">Quick Tour - Topics</a></h2>
+
+<div style="display:flex; justify-content: center;">
+<div style="text-align:right; margin-right:24px; line-height:2.5">
+<a href="#start">Start page</a> [1]<br />
+<a href="#deskbar">The Deskbar</a> [2]<br />
+<a href="#window">The window widgets</a> [3]<br />
+<a href="#shortcutkey">The shortcut key</a> [4]<br />
+<a href="#twitcher">The Twitcher</a> [5]<br />
+<a href="#teammonitor">The Team monitor</a> [6]<br />
+<a href="#move-resize">Window management: Move &amp; Resize</a> [7]<br />
+<a href="#stack">Window management: Stack</a> [8]<br />
+<a href="#tile">Window management: Tile</a> [9]<br />
+</div>
+<div style="text-align:left; margin-left:24px; line-height:2.5">
+[10] <a href="#workspaces">Workspaces</a><br />
+[11] <a href="#replicants">Replicants</a><br />
+[12] <a href="#singlewindow">Single window navigation</a><br />
+[13] <a href="#drilldown">Drill-down navigation</a><br />
+[14] <a href="#mounting">Mounting volumes</a><br />
+[15] <a href="#filesystem">Filesystem layout</a><br />
+[16] <a href="#queries">Finding files with queries</a><br />
+[17] <a href="#wireless">Wireless connection</a><br />
+[18] <a href="#moresoftware">Getting more and updating software</a><br />
+[19] <a href="#end">End page</a><br />
+</div>
+</div>
 
 <h1><a id="deskbar" name="deskbar">The Deskbar</a></h1>
 
@@ -57,7 +111,7 @@
 <a href="https://www.haiku-os.org/docs/userguide/en/deskbar.html" target="_blank">Deskbar</a></div>
 
 
-<h1><a id="window-widgets" name="window-widgets">The window widgets</a></h1>
+<h1><a id="window" name="window">The window widgets</a></h1>
 
 <p>Here's a typical Haiku window with its usual widgets:</p>
 
@@ -70,7 +124,7 @@
 <a href="https://www.haiku-os.org/docs/userguide/en/gui.html" target="_blank">Haiku's GUI</a></div>
 
 
-<h1><a id="shortcut-key" name="shortcut-key">The shortcut key</a></h1>
+<h1><a id="shortcutkey" name="shortcutkey">The shortcut key</a></h1>
 
 <p>The <span class="app">Keymap</span> preferences let you switch from the Haiku standard <span class="key">ALT</span> key to <span class="key">CTRL</span> (Windows/Linux mode). This is a global switch, so for example quitting a program in the shell will then be done with <span class="key">ALT</span>&nbsp;<span class="key">C</span> instead the usual <span class="key">CTRL</span>&nbsp;<span class="key">C</span>.<br />
 This inconsistancy is one reason for the default <span class="key">ALT</span> shortcut in Haiku.</p>
@@ -97,7 +151,7 @@ Tapping the <span class="key">TAB</span> key only quickly while holding <span cl
 <a href="https://www.haiku-os.org/docs/userguide/en/twitcher.html" target="_blank">Twitcher</a></div>
 
 
-<h1><a id="team-monitor" name="team-monitor">The Team monitor</a></h1>
+<h1><a id="teammonitor" name="teammonitor">The Team monitor</a></h1>
 
 <p>If some application crashed badly and maybe won't disappear from Deskbar's running application list, press <span class="key">CTRL</span>&nbsp;<span class="key">ALT</span>&nbsp;<span class="key">DEL</span> to invoke the <span class="app">Team monitor</span>. Here you can select an entry and kill a misbehaving app.</p>
 
@@ -192,7 +246,7 @@ You can drag &amp; drop them by the handle onto the Desktop, where they are full
 <a href="https://www.haiku-os.org/docs/userguide/en/gui.html#replicants" target="_blank">Replicants</a></div>
 
 
-<h1><a id="single-window-nav" name="single-window-nav">Single window navigation</a></h1>
+<h1><a id="singlewindow" name="singlewindow">Single window navigation</a></h1>
 
 <p>Double-clicking your way down folder after folder, you'll quickly end up with many open Tracker windows.<br />
 Holding the <span class="key">OPT</span> key (normally <span class="key">WIN</span> on the keyboard) prevents this as it automatically closes the parent folder.<br />
@@ -208,7 +262,7 @@ Alternatively, you can activate <span class="menu">Single window navigation</spa
 <a href="https://www.haiku-os.org/docs/userguide/en/tracker.html" target="_blank">Tracker</a></div>
 
 
-<h1><a id="drill-down" name="drill-down">Drill-down navigation</a></h1>
+<h1><a id="drilldown" name="drilldown">Drill-down navigation</a></h1>
 
 <p>A nice alternative to opening a deep hierarchy of folders is called "drill-down navigation". Right-clicking a folder or anywhere in a Tracker window (or the Desktop) will open a context menu. Beside various expected commands, there's a menu of the current folder at the top that contains all its subfolders.<br />
 Drill your way down until you find the folder or file to open.</p>
@@ -296,7 +350,7 @@ When the connection is established, you'll be asked for the network's encryption
 <a href="https://www.haiku-os.org/docs/userguide/en/preferences/network.html" target="_blank">Network preferences</a></div>
 
 
-<h1><a id="more-software" name="more-software">Getting more and updating software</a></h1>
+<h1><a id="moresoftware" name="moresoftware">Getting more and updating software</a></h1>
 
 <p><span class="app">HaikuDepot</span> from the Deskbar's applications menu is where to search, install and uninstall software packages.<br />
 <span class="app">SoftwareUpdater</span> should be started from time to time to update installed software as well as Haiku itself.</p>
@@ -312,7 +366,7 @@ When the connection is established, you'll be asked for the network's encryption
 <a href="https://www.haiku-os.org/docs/userguide/en/preferences/repositories.html" target="_blank">Repositories</a></div>
 
 
-<h1><a id="the-end" name="the-end">The end</a></h1>
+<h1><a id="end" name="end">The end</a></h1>
 
 <p>This is the end of the tour. We hope it helped you to quickly feel at home in your new OS!</p>
 <p>For more detailed information, check out the <a href="https://www.haiku-os.org/docs/welcome/welcome_en.html" target="_blank">Welcome page</a> and the <a href="https://www.haiku-os.org/docs/userguide/en/contents.html" target="_blank">User Guide</a>.<br />
@@ -323,7 +377,6 @@ You can also join our <a href="https://discuss.haiku-os.org/" target="_blank">We
 <div class="shot">
 <a href="https://www.haiku-os.org"><img src="../images/H square - black on white.png" alt="Visit the Haiku website at https://www.haiku-os.org" /></a>
 </div>
-<p><span style="color:silver; font-size:0.8em; float:center">Copyright 2018, Haiku Inc., Author: Humdinger</span></p>
 <p><br /></p>
 </div>
 </div>
